@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6,h7, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body{
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background:#ffffff;
+}
+div{
+	display: block;
+}
+h1, h2, h3, h4, h5, h6, a{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	font-weight: 700;
+}
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*header*/
+.header_bottom{
+	background-color: white;
+	height:120px;
+	border-bottom: solid;
+	border-color: #2b2a2a;
+	border-width: 1px;
+}
+.header-top{
+	background-color: #2b2a2a;
+	height: 60px;
+	padding: 12px 0;
+}
+#logo{
+	position: absolute;
+	left: 3em;
+	margin: 1em;
+
+}
+.topword{
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	text-align: center;
+	padding: 5px 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.topword ul li{
+	display: inline-block;
+	padding: 0em 1em;
+	font-size: 17px;
+}
+
+
+.topword ul li a{
+	font-size: 1em;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+
+.view-cart i.fa {
+    font-size: 30px;
+    color: #ffffff;
+}
+button.view-cart {
+    background: transparent;
+    border: none;
+}
+button.view-cart:focus{
+    outline:none;
+}
+.view-cart-main{
+	float: right;
+	padding-right: 120px;
+	/*bottom: 5px;*/
+	/*position: relative;
+	padding: 1em 5em;*/
+}
+.search_bar{
+	float: right;
+    width: 30%;
+    margin: 3em 0 0;
+/*    margin: 0em 0 0em 0em;
+    padding-top: 40px;
+    padding-right: 2em;*/
+}
+.search_bar input[type="search"] {
+    width: 83%;
+    padding: 10px;
+    font-size: 16px;
+    color: #999;
+    outline: none;
+    border: 1px solid #cccccc;
+    background: none;
+    -webkit-appearance: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+.search_bar  i.fa.fa-search {
+    font-size: 17px;
+	color:#fff;
+}
+button.btn.btn-default.search {
+    background: #1ABC9C;
+    padding: 11px 12px 11px;
+    float: right;
+    outline: none;
+    border: none;
+}
+button.btn.btn-default.search:hover {
+    background:#333;
+}
+
+
+/*content*/
+.main_content{
+	width: 100%;
+	height: 1200px;
+	background-color: #ffffff;
+	margin: auto;
+}
+.right_content{
+	width: 80%;
+	height: 1200px;
+	float: right;
+	background-color:#F2F3F4  ;
+}
+
+/*sidebar*/
+.sidebar{
+	width: 20%;
+	float: left;
+	height: 1200px;
+	background-color: #1ABC9C;
+}
+.sidebar_title{
+	text-align: center;
+	color: #212121;
+	padding: 15px;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	border-bottom: solid;
+	border-color: #2b2a2a;
+	border-width: 2px;
+}
+/*lawran's block starts here*/
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  background: #86cbd6;;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #86cbd6;;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+.form {
+  background: rgba(33, 40, 47, 0.9);
+  padding: 40px;
+	border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+	max-width: 600px;
+	margin: 40px auto;
+
+}
+
+/*divide buttons horizontally */
+#formAlign_agent{
+	float: left;
+	margin: 200px 100px;
+}
+
+#formAlign_customer{
+	float: right;
+	margin: 200px 100px ;
+}
+
+/*navigation bar css*/
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.navbar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.navbar li a:hover {
+    background-color: #333;
+    color: white;
+
+}
+
+/*dropdown*/
+
+.dropdown{
+display: none;
+
+}
+
+li:hover  .dropdown {
+	display: block;
+}
+
+li{
+  	position: relative;
+  }
+li .dropdown {
+  	position: absolute;
+
+  }
+/*positioning dropdown*/
+.dropdown {
+  left: 100% ;
+  top: 0% ;
+}
+
+/*adding hover effect*/
+
+li:hover{
+  background: #333 ;
+}
+
+li:hover > a {
+  color:#fff ;
+}
+
+/*lawran's block end here*/
+
+
+/*footer*/
+#footer-bottom{
+	margin:auto;
+	text-align:center;
+	padding:12px;
+	height: 50px;
+	width:100%;
+	background-color: #333232;
+}
+#footer-bottom p {
+	color: white;
+	font-size: 1em;
+	line-height: 1.8em;
+}
+#footer-bottom a {
+	text-decoration: none;
+	color: #1ABC9C
+}
+
+.clr { clear:both;
+	padding:0;
+	margin:0;
+	width:100%;
+	font-size:0px;
+	line-height:0px;
+} /*Clear both sides to assist with div alignment*/
+.footertop {
+	background:#2b2a2a;
+	padding: 5em 0 2em;
+	height: 350px;
+	margin: 0 auto;
+}
+.container .footer_grid{
+	margin-bottom: 3em;
+}
+.footer_grid h3 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 1.8em;
+    text-transform: uppercase;
+}
+.footer_grid ul li {
+    list-style-type: none;
+    margin-bottom: 1em;
+    color: #afafaf;
+    font-size: 14px;
+}
+.footer_grid ul.address li i {
+    color:#1ABC9C;
+    border: 1px solid #1ABC9C;
+    padding: .5em;
+    margin-right: 1em;
+}
+.footer_grid ul.address li span {
+    display: block;
+    margin-left: 3em;
+}
+.footer_grid ul li a {
+    color: #afafaf;
+    text-decoration: none;
+}
+.footer_grid ul li a:hover {
+	color:#1ABC9C;
+}
+i.fa.fa-arrow-right {
+    color: #1ABC9C;
+    margin-right: 10px;
+}
+.col-md-3 footer_grid{
+	-webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+}
+
+
+
